@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.qnx.qcc.configuration.exe.debug.360543260">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.debug.360543260" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="com.qnx.qcc.configuration.exe.debug.360543260" name="Device-Debug" parent="com.qnx.qcc.configuration.exe.debug">
+					<folderInfo id="com.qnx.qcc.configuration.exe.debug.360543260." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.debug.1981227346" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<option id="com.qnx.qcc.option.cpu.1519040895" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.515203659" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Device-Debug}" enableCleanBuild="false" id="com.qnx.nto.123130799" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Coverage"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Coverage"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.qnx.qcc.tool.compiler.1847447512" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.1824761421" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.176916634" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.231833964" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.2041519146" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.670851736" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.32320536" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.1340573026" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1531999439" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.defines.1184497386" name="Defines (-D)" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.1065824555" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.630321430" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.972807234" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.1166863744" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1332012384" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Device-Debug}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.924597308" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1635251657" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+									<listOptionValue builtIn="false" value="curl"/>
+									<listOptionValue builtIn="false" value="ssl"/>
+									<listOptionValue builtIn="false" value="icui18n"/>
+									<listOptionValue builtIn="false" value="icuuc"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="freetype"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.1243411916" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.649842220" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.debug.526803818" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.debug.553545313" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.debug.877680300" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.debug.48124815" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ocmp3lib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Device-Debug"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.debug.1317719349" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Device-Debug"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tinyxml_qnx;" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tinyxml_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tinyxml_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="tinyxml_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tinyxml_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.release.1883651646">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.release.1883651646" moduleId="org.eclipse.cdt.core.settings" name="Device-Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="com.qnx.qcc.configuration.exe.release.1883651646" name="Device-Release" parent="com.qnx.qcc.configuration.exe.release">
+					<folderInfo id="com.qnx.qcc.configuration.exe.release.1883651646." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.release.775868234" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<option id="com.qnx.qcc.option.cpu.107828829" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1475235098" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Device-Release}" enableCleanBuild="false" id="com.qnx.nto.463067183" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.736272872" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.293695444" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.28370927" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.139998681" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.pie.1981826405" name="Position Independent Executable (-fPIE)" superClass="com.qnx.qcc.option.compiler.pie" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.qccoptions.1984068692" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-frecord-gcc-switches"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.1541640762" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.73419855" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.includePath.243067312" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.188221404" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.1957864031" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.langcpp.87781441" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.446434393" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Device-Release}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.pie.1650152168" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.security.532635172" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1372203181" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+									<listOptionValue builtIn="false" value="curl"/>
+									<listOptionValue builtIn="false" value="ssl"/>
+									<listOptionValue builtIn="false" value="icui18n"/>
+									<listOptionValue builtIn="false" value="icuuc"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="freetype"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.1707752485" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.1681890650" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.release.1349529187" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.release.415867042" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.release.397224397" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.release.1687150650" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.release.1996729693" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tinyxml_qnx;com.qnx.qcc.configuration.staticLib.release.1006985415" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tinyxml_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tinyxml_qnx/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="tinyxml_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tinyxml_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.397513224">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.397513224" moduleId="org.eclipse.cdt.core.settings" name="Device-Profile">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=com.qnx.buildType.profile,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="Build for Profiling" id="com.qnx.qcc.configuration.exe.profile.397513224" name="Device-Profile" parent="com.qnx.qcc.configuration.exe.profile">
+					<folderInfo id="com.qnx.qcc.configuration.exe.profile.397513224." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.profile.1954369855" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<option id="com.qnx.qcc.option.cpu.2034491474" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1416273842" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Device-Profile}" id="com.qnx.nto.275219051" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.604516072" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.88866542" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.246354845" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.profile2.327446443" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.1513467037" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.1689704397" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.1290199049" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.794596366" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.906114433" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.751570509" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.26327718" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.1572037859" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.255666403" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.profile2.1928326454" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.569714156" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1548416862" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Device-Profile}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.2058330043" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.2014073735" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.858889013" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.1080744861" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.profile.282676865" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.profile.915545471" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.profile.992211865" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.profile.864869210" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.profile.1181047289" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.coverage.147489910">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.coverage.147489910" moduleId="org.eclipse.cdt.core.settings" name="Device-Coverage">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=com.qnx.buildType.coverage,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="Build for Code Coverage" id="com.qnx.qcc.configuration.exe.profile.coverage.147489910" name="Device-Coverage" parent="com.qnx.qcc.configuration.exe.profile.coverage">
+					<folderInfo id="com.qnx.qcc.configuration.exe.profile.coverage.147489910." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.coverage.2085886503" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<option id="com.qnx.qcc.option.cpu.397019140" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.522213837" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Device-Coverage}" id="com.qnx.nto.430121383" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.1264704779" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.1737695662" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.1502781462" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.coverage.1524823284" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.430608527" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.528957487" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.444576324" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.1041152589" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.1224676486" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1431517930" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.1366795185" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.723069129" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.1778227806" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.coverage.993079107" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs -p)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.1948044095" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1691899080" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Device-Coverage}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.1899433449" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1568444596" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.1142654518" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.241279557" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.coverage.953314343" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.coverage.394897493" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.coverage.198637823" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.coverage.918655129" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.coverage.643679381" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.debug.590539842">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.debug.590539842" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="" id="com.qnx.qcc.configuration.exe.debug.590539842" name="Simulator-Debug" parent="com.qnx.qcc.configuration.exe.debug">
+					<folderInfo id="com.qnx.qcc.configuration.exe.debug.590539842." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.debug.814599354" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.921075420" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Simulator-Debug}" id="com.qnx.nto.1212961635" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.257432810" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.275766849" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.1193739283" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.1185424814" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.172159740" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.1701559229" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.1819679678" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.420512624" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1816993321" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.800074198" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.1983761021" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.1433533859" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.1131981999" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.740562791" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Simulator-Debug}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.246447043" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.967783178" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.1624901307" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.245843416" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.debug.992676547" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.debug.2015012707" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.debug.2130150721" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.debug.2042956278" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.debug.2011251778" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.1255596678">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.1255596678" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Profile">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=com.qnx.buildType.profile,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="Build for Profiling" id="com.qnx.qcc.configuration.exe.profile.1255596678" name="Simulator-Profile" parent="com.qnx.qcc.configuration.exe.profile">
+					<folderInfo id="com.qnx.qcc.configuration.exe.profile.1255596678." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.profile.703175066" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1957369444" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Simulator-Profile}" id="com.qnx.nto.1659579893" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.1392176757" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.1810937498" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.1149517306" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.profile2.94639817" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.1684055632" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.1053515165" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.2119217525" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.713601642" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.1727001172" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1687591931" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.2033778094" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.2102707863" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.813680595" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.profile2.1769165616" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.749630180" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.57415000" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Simulator-Profile}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.172925337" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.509580214" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.528453885" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.628969779" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.profile.1218117129" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.profile.293972832" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.profile.1401659786" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.profile.2033172549" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.profile.1371435728" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.coverage.15417005">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.coverage.15417005" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Coverage">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=com.qnx.buildType.coverage,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="Build for Code Coverage" id="com.qnx.qcc.configuration.exe.profile.coverage.15417005" name="Simulator-Coverage" parent="com.qnx.qcc.configuration.exe.profile.coverage">
+					<folderInfo id="com.qnx.qcc.configuration.exe.profile.coverage.15417005." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.exe.coverage.1054601784" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1680122445" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/tutorial3_qnx/Simulator-Coverage}" id="com.qnx.nto.621821817" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.471425963" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.1872372837" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compile.debug.894599264" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.coverage.1016903873" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.479897132" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${DJENGINE_DIR}/include/osal&quot;"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.defines.1714712995" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="_DJQNX"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.compiler.99958164" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.1490392987" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.1631711821" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.85503357" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib}&quot;"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.assembler.1648956598" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.974297326" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.debug.39534514" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.coverage.1558546134" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs -p)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.langcpp.1712902891" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1624495310" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml_qnx/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/djos_qnx/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ocmp3lib/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djengine_qnx/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/djopenalsound_qnx/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/gles2render_qnx/Simulator-Coverage}"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.security.262502045" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1291720022" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="djopenalsound_qnx"/>
+									<listOptionValue builtIn="false" value="djengine_qnx"/>
+									<listOptionValue builtIn="false" value="gles2render_qnx"/>
+									<listOptionValue builtIn="false" value="tinyxml_qnx"/>
+									<listOptionValue builtIn="false" value="ocmp3lib"/>
+									<listOptionValue builtIn="false" value="djos_qnx"/>
+									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="z"/>
+									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="screen"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="png"/>
+									<listOptionValue builtIn="false" value="EGL"/>
+									<listOptionValue builtIn="false" value="asound"/>
+									<listOptionValue builtIn="false" value="mmrndclient"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="strm"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.1731710078" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.369258627" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="djengine_qnx;com.qnx.qcc.configuration.staticLib.coverage.1072114232" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djengine_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djengine_qnx/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djengine_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djengine_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djopenalsound_qnx;com.qnx.qcc.configuration.staticLib.coverage.839622171" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/djopenalsound_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djopenalsound_qnx/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djopenalsound_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="djopenalsound_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="gles2render_qnx;com.qnx.qcc.configuration.staticLib.coverage.310811196" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gles2render_qnx"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gles2render_qnx/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="gles2render_qnx"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gles2render_qnx"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="ocmp3lib;com.qnx.qcc.configuration.staticLib.coverage.1225774554" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ocmp3lib/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="ocmp3lib"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="djos_qnx;com.qnx.qcc.configuration.staticLib.coverage.2083963532" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/djos_qnx/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="djos_qnx"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="tutorial3_qnx.null.1161918895" name="tutorial3_qnx"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/tutorial3_qnx"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.release.1883651646">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.360543260">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.147489910">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.15417005">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.590539842">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.1255596678">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.397513224">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
