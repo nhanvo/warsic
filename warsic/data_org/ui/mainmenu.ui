@@ -1,0 +1,28 @@
+UINODE "MainMenu"
+{
+	CLASS "Warsic" "MainMenuPageUINode"
+	POS [0 0]
+	SIZE [-1 -1] # Will be replaced with UI view size
+	ALIGN TOP LEFT
+	ATTACH TOP LEFT
+	#EVENT 	OnShow "SHOW_MENU"
+	
+	FLAGS	UNCLICKABLE
+
+	STYLE	normal "header"
+	STYLE 	disabled "header"
+	STYLE	focused "header"
+	UINODE "statistics_icon"
+	{
+		UINODE		"menubutton" 			
+		STYLEFRAME	normal			"ui/mainmenu" "statistics" 2
+		STYLEFRAME 	down			"ui/mainmenu" "statistics" 2				
+		STYLEFRAME 	disabled		"ui/mainmenu" "statistics" 2
+		STYLEFRAME 	focused			"ui/mainmenu" "statistics" 2
+		POS		[-16 -18]
+		CLICK_BORDER 	60 60 80 80
+		ALIGN	TOP HCENTER 
+		ATTACH	BOTTOM HCENTER
+		EVENT OnClicked "STATISTICS"
+	}
+}
