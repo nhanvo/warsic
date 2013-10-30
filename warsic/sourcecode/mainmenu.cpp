@@ -111,7 +111,6 @@ void DJMainMenuPageUINode::OnPaint(const DJ2DRenderContext &rc)
 	DJVector2 vPos = GetPosition();
 	if(IsNodeEnabled())
 	{
-		
 	}
 	else
 	{
@@ -187,11 +186,13 @@ djint32 DJMainMenuPageUINode::OnTouchCancel( djint32 nDevice, djint32 nID, float
 
 djbool DJMainMenuPageUINode::OnUIEvent(DJUINode *pNode, const DJUIEvent &ev)
 {
-	if (ev.m_uEventID == pTheUI->EVENTID_ON_MESSAGE)
-	{
-	}
 	if (ev.m_uEventID == pTheUI->EVENTID_ON_CLICKED)
 	{
+	   if (ev.m_uStateID == pTheUI->GetStateID("MENUMAIN_PLAY"))
+		{
+			((DJWarsicApplication*)pTheApp)->GotoGameState(GS_INGAME);
+			return DJTRUE;
+		}
 	}
 	return DJFALSE;
 }  

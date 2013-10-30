@@ -1,0 +1,34 @@
+UINODE "MainMenu"
+{
+	CLASS "Warsic" "MainMenuPageUINode"
+	STYLE	normal "page"
+	STYLE 	disabled "page"
+	STYLE	focused "page"
+	POS [0 0]
+	SIZE [-1 -1] # Will be replaced with UI view size
+	ALIGN TOP LEFT
+	ATTACH TOP LEFT
+	#EVENT 	OnShow "SHOW_MENU"	
+	FLAGS	UNCLICKABLE
+	UINODE "menumain_play"
+	{
+		CLASS "djengine" "ButtonUINode" 
+
+		STYLE normal 	"menumain/btn_play_normal" 
+		STYLE down		"menumain/btn_play_down"
+		STYLE disabled  "menumain/btn_play_down"
+		STYLE focused	"menumain/btn_play_down"
+
+		STYLEFRAME	normal	"ui/menumain/menumain" "button_play" 0
+		STYLEFRAME	down	"ui/menumain/menumain" "button_play" 1	
+		STYLEFRAME  disabled "ui/menumain/menumain" "button_play" 1	
+		STYLEFRAME  focused  "ui/menumain/menumain" "button_play" 1	
+
+		POS		[0 0]
+		CLICK_BORDER 	60 60 80 80
+		ALIGN	HCENTER VCENTER
+		ATTACH	HCENTER VCENTER
+		TEXT 	"MENU_MAIN_PLAY_BTN"
+		EVENT OnClicked "MENUMAIN_PLAY"
+	}
+}

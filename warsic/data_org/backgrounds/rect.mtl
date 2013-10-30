@@ -1,0 +1,15 @@
+Material
+{
+	Mode "default"
+	{
+		Shader 	"rect"
+		
+		Blend		SRC_ALPHA	INV_SRC_ALPHA
+		Flags		NOZWRITE NOZCOMPARE DOUBLESIDED
+		
+		Attribute	VEC3			POSITION 	"pos_attr"
+		Attribute	VEC4 			COLOR		"col_attr"
+
+		Uniform	MAT44		TOTAL_TRANSFORM	"g_mTransform"
+	}
+}

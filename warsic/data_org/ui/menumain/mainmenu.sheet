@@ -1,0 +1,11 @@
+SHEET
+{
+	FILE "ui/mainmenu.png" [1024 1024]	
+	
+	GROUP "button_play"
+	{
+		
+		FRAME [0 0] [110 110]	[0 0] 	# play_nỏmal
+		FRAME [0 110] [110 110]	[0 0] 	# play_press
+	}
+}
