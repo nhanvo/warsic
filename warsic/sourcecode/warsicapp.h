@@ -38,11 +38,11 @@ enum
 	// Layer for background image
 	LAYER_BACKGROUND	= 0,
 	// Layer for our sprites
-	LAYER_SPRITES,
+	LAYER_PLAYER,
 	// Layer for overlay and UI
 	LAYER_OVERLAY,
 	LAYER_MENU,
-
+	
 	// Number of layers
 	LAYER_COUNT,
 };
@@ -112,6 +112,8 @@ protected:
 
 	// Is game loaded?
 	djbool				m_bGameIsLoaded;
+
+	DJ2DSkeletonNode*		m_pKiwiSkel;
 public:
 
 	/////////////////////////////////////////////////////////////////

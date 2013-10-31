@@ -31,6 +31,15 @@ DJ_FILE_START();
 // UI height
 #define UI_DESIGN_HEIGHT			575
 
+enum
+{
+	COLIDE_VALID = -1,
+	COLIDE_TOP,
+	COLIDE_RIGHT,
+	COLIDE_BOTTOM,
+	COLIDE_LEFT,
+};
+
 /////////////////////////////////////////////////////////////////
 DJ_FILE_END();
 /////////////////////////////////////////////////////////////////

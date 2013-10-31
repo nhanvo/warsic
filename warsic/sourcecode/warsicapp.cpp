@@ -32,13 +32,14 @@
 #include <djdevicemanager.h>
 #include <djeffectresourcemanager.h>
 #include <djlocalizer.h>
-#include <djcamera.h>
 
 /////////////////////////////////////////////////////////////////
 // Game Includes
 #include "warsicapp.h"
 #include "mainmenu.h"
 #include "gamedef.h"
+#include "camera.h"
+#include "level.h"
 
 /////////////////////////////////////////////////////////////////
 // Name of the game module
@@ -115,9 +116,13 @@ DJViewport				g_UIViewport;
 DJFont*					g_pFont				= NULL;
 DJMaterial*				g_pRectMaterial		= NULL;
 DJMaterial*				g_pTexRectMaterial	= NULL;
-DJCamera*				g_pCamera			= NULL;
+Camera*					g_pCamera			= NULL;
+DJVector2				g_vScaleScreen		= DJVector2(1.0f);
+float					g_fScreenScaler		= 1.0f;
+DJVector2				g_vGlobalScale		= DJVector2(0.6320987654320988f);
+LevelManager*			g_pLevelManager		= NULL;
 
-float g_fGameTimeScale = 1.0f;
+float					g_fGameTimeScale	= 1.0f;
 
 /////////////////////////////////////////////////////////////////
 // List of sounds to load
@@ -535,11 +540,12 @@ djresult DJWarsicApplication::OnInit()
 	djuint32 rsw,rsh;
     pTheRenderDevice->GetScreenSize(rsw,rsh);
 	pTheRenderDevice->SetViewport(DJViewport(rsw/2-g_nScreenWidth/2,rsh/2-g_nScreenHeight/2,g_nScreenWidth,g_nScreenHeight));
-
+	g_vScaleScreen = DJVector2((float)g_nScreenWidth/1024.f,((float)g_nScreenHeight)/768.0f);
 	if(g_nScreenWidth == g_nScreenHeight)
 	{
 		g_UIViewport.SetViewport(0,0,720,720);
 	}
+	
 	else if(g_nScreenWidth <= 480)
 	{
 		g_bUseSDUI = DJTRUE;
@@ -645,17 +651,13 @@ djresult DJWarsicApplication::OnInit()
 	pTheUI->SetUIHeight(g_UIViewport.GetHeight());
 	pTheUI->RegisterEventListener(this);
 
-	//// Setup global 3D camera
-	//g_pCamera = DJ_NEW(DJCamera);
-	//if (g_pCamera == NULL)
-	//{
-	//	DJError("Failed to create camera (out of memory)!");
-	//	return DJFALSE;
-	//}
-	//g_pCamera->SetNearDistance(10.0f);
-	//g_pCamera->SetFarDistance(2000.0f);
-	//g_pCamera->SetFOV(DJRADIANS(65.0f));
-	//g_pCamera->SetAspect((float)g_nScreenWidth/(float)g_nScreenHeight);
+	// Setup global 3D camera
+	g_pCamera = DJ_NEW(Camera);
+	if (g_pCamera == NULL)
+	{
+		DJError("Failed to create camera (out of memory)!");
+		return DJFALSE;
+	}
 
 	// Load ui text
 	theLocalizer.AddTagFile("text/eng/menu.text");
@@ -671,7 +673,7 @@ djresult DJWarsicApplication::OnInit()
 	theSpriteEngine.Init(LAYER_COUNT);
 
 	// Initialize effect resource manager
-	theEffectResourceManager.Init();
+	theEffectResourceManager.Init(); 
 
 	return DJ_SUCCESS;
 }
@@ -687,6 +689,25 @@ djbool DJWarsicApplication::OnLoad()
 		return DJTRUE;
 	}
 	m_bGameIsLoaded = DJTRUE;
+
+	// Create new level manager
+	g_pLevelManager = DJ_NEW ( LevelManager );
+	if (!g_pLevelManager->Init())
+	{
+		DJError("Failed to initialize level manager!");
+		return DJFALSE;
+	}
+
+	// Load current level 
+	if (g_pLevelManager->GetCurrentLevel() == NULL)
+	{
+		if (!g_pLevelManager->LoadLevel())
+		{
+			DJError("Failed to load level!!!");
+			return DJFALSE;
+		}
+	}
+
 	// Load menu for menu system
 	LoadMenu(MENU_MAIN, "menumain/menumain");
 	return DJTRUE;
@@ -728,6 +749,8 @@ void DJWarsicApplication::OnUpdate()
 			UpdateLoadGame();
 		break;
 		case GS_MENU: 
+		case GS_INGAME:
+			UpdateIngame();
 		break;
 	};
 }
@@ -1056,7 +1079,7 @@ void DJWarsicApplication::UpdateLoadGame()
 			DJError("Failed to load application!!!");
 		}
 	}
-	if (m_bGameIsLoaded && m_fStateTimer > 3.0f)
+	if (m_bGameIsLoaded && m_fStateTimer > 1.0f)
 	{
 		GotoMenu(MENU_MAIN);
 		GotoGameState(GS_MENU);
@@ -1081,7 +1104,8 @@ void DJWarsicApplication::UpdateLoadLevel()
 
 void DJWarsicApplication::UpdateIngame()
 {
-	/// ::TODO
+	if(g_pLevelManager->Update())
+		return;
 }
 /////////////////////////////////////////////////////////////////
 
