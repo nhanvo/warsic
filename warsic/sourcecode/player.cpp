@@ -53,6 +53,7 @@ djbool Player::Init()
 	m_pKiwiSkel->SetScale((float)g_nScreenHeight/720.0f, (float)g_nScreenHeight/720.0f);
 	m_pKiwiSkel->Create("sprites/dragon");
 	m_pKiwiSkel->SetAnimation("flying", DJTRUE);
+	m_pKiwiSkel->SetScale(DJVector2(0.3f, 0.3f));
 	theSpriteEngine.AddActiveNode(m_pKiwiSkel);
 	theSpriteEngine.AddNode(m_pKiwiSkel, LAYER_PLAYER);	
 

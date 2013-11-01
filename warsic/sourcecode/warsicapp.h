@@ -112,8 +112,6 @@ protected:
 
 	// Is game loaded?
 	djbool				m_bGameIsLoaded;
-
-	DJ2DSkeletonNode*		m_pKiwiSkel;
 public:
 
 	/////////////////////////////////////////////////////////////////
